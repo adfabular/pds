@@ -35,10 +35,32 @@ export interface IEmployeeInfo {
   Email?: string;
   ATM_No?: string;
   PRCNo?: string;
+  StreetNo: string;
 }
 
 export interface IChangePassword {
   EmployeeID: string;
   OldPassword: string;
   NewPassword: string;
+}
+
+export interface IDependents {
+  ID: number;
+  Name: string;
+  Relations: string;
+  BDate?: Date;
+  EmpID: string;
+  MedicalAid?: boolean;
+  EducAid?: boolean;
+  LastName: string;
+  FirstName: string;
+  MiddleName: string;
+  IsQualifiedITR: boolean;
+}
+
+export interface IPayrollFinSummary {
+  Id: number;
+  EmployeeId: string;
+  PayrollPeriod: string;
+  DateCovered: string;
 }

@@ -1,20 +1,11 @@
 import { Layout, Menu, MenuProps, Modal } from "antd";
-import React from "react";
 import useAppStore from "../store";
 import {
   HomeOutlined,
   UserOutlined,
   ExclamationCircleFilled,
 } from "@ant-design/icons";
-import {
-  BsCarFront,
-  BsEnvelopePaper,
-  BsFileSpreadsheet,
-  BsPersonCheck,
-  BsReceiptCutoff,
-  BsWrench,
-} from "react-icons/bs";
-import Cookies from "js-cookie";
+import { BsPersonCheck, BsReceiptCutoff } from "react-icons/bs";
 import { useNavigate } from "react-router-dom";
 const { Sider } = Layout;
 const { confirm } = Modal;
